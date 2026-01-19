@@ -1,10 +1,7 @@
 def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+    return n > 1 and all(n % i for i in range(2, int(n**0.5) + 1))
 
-n = int(input("Enter a number: "))
-print("Prime number" if is_prime(n) else "Not prime")
+if __name__ == "__main__":
+    n = int(input("Enter a number: "))
+    print(f"{n} is {'a prime' if is_prime(n) else 'not a prime'} number.")
+    
