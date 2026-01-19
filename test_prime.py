@@ -1,8 +1,13 @@
-from pime_number import is_prime
-def test_is_prime 1()
-assert_is_prime (5)=="prime"
-def test_is_prime 2()
-assert_is_prime (7)=="prime"
-def test_is_prime 3()
-assert_is_prime (10)==" not prime"
+from prime_number import is_prime
+def test_is_prime_1():
+    assert is_prime(5) == "prime"
+def test_is_prime_2():
+    assert is_prime(7) == "prime"
+def test_is_prime_3():
+    assert is_prime(10) == "not prime"
 
+test_is_prime_1()
+test_is_prime_2()
+test_is_prime_3()
+
+print("All tests passed!")
