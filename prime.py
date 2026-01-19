@@ -1,7 +1,13 @@
-def is_prime(n):
-    return n > 1 and all(n % i for i in range(2, int(n**0.5) + 1))
+def is_prime_number(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-if __name__ == "__main__":
-    print(f"{'a prime' if is_prime })
-    else
-    print(f"{'a not prime' if is_prime})
+
+number = int(input("Enter a number: "))
+is_prime = is_prime_number(number)
+
+print(f"{number} is {'a prime' if is_prime else 'not a prime'}")
