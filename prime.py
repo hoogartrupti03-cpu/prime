@@ -1,11 +1,8 @@
 def is_prime(n):
-    # Check if the number is less than or equal to 1, which are not prime
     if n <= 1:
         return False
-    # Check if n is 2 (the only even prime number)
     if n == 2:
         return True
-    # Check if n is divisible by any number from 2 to sqrt(n)
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return False
