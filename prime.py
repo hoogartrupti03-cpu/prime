@@ -2,5 +2,4 @@ def is_prime_number(n):
     return n > 1 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))
 
 if __name__ == "__main__":
-    n = int(input("Enter a number to check if it is prime: "))
     print(f"{n} is {'a prime' if is_prime_number(n) else 'not a prime'} number.")
