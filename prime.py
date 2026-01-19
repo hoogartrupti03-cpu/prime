@@ -3,6 +3,5 @@ def is_prime(n):
 
 if __name__ == "__main__":
     print(f"Prime number:")
-    else
-    print(f"Not a Prime number:")
+    
     
