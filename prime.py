@@ -5,6 +5,6 @@ def is_prime_number(n):
         if n % i == 0:
             return False
     return True
-is_prime = is_prime_number(number)
+is_prime = is_prime_number(n)
 
-print(f"{number} is {'a prime' if is_prime else 'not a prime'}")
+print(f"{n} is {'a prime' if is_prime else 'not a prime'}")
