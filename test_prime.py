@@ -6,8 +6,3 @@ def test_is_prime_2():
 def test_is_prime_3():
     assert is_prime(10) == "not prime"
 
-test_is_prime_1()
-test_is_prime_2()
-test_is_prime_3()
-
-print("All tests passed!")
